@@ -4,8 +4,7 @@ window.onload = function() {
     var serialize   = document.getElementById("serialize")
       , highlight   = document.getElementById("highlight")
       , buffer      = document.getElementById("buffer").children[0].children[0]
-      , hlapplier   = rangy.createCssClassApplier("highlight")
-      , highlighter = rangy.createHighlighter();
+      , hlapplier   = rangy.createCssClassApplier("highlight");
     
     serialize.addEventListener("click", function() {
         if (rangy.getSelection().isCollapsed) return;
